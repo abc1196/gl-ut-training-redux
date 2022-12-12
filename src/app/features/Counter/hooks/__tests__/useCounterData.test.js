@@ -15,6 +15,7 @@ describe('useCounterData', () => {
     expect(result.current).toHaveProperty('incrementValue', 2);
     expect(result.current).toHaveProperty('setIncrementAmount');
   });
+
   it('should return values', () => {
     const wrapper = ({ children }) => <Provider store={store}>{children}</Provider>;
 

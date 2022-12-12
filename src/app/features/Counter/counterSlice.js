@@ -1,4 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { selectCount } from './counterSelectors';
 import { fetchCount } from './services/counterService';
 
 const initialState = {
@@ -44,7 +45,6 @@ export const counterSlice = createSlice({
 // Here's an example of conditionally dispatching actions based on current state.
 export const incrementIfOdd = (amount) => (dispatch, getState) => {
   const currentValue = selectCount(getState());
-  console.log('@incrementIfOdd', currentValue);
   if (currentValue % 2 === 1) {
     dispatch(incrementByAmount(amount));
   }

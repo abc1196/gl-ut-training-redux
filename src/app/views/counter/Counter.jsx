@@ -1,4 +1,13 @@
+// vendors
 import React from 'react';
+
+// components
+import { Footer } from '../../components/Footer';
+
+// hooks
+import { useCounterData } from './hooks/useCounterData';
+
+// actions
 import {
   decrement,
   increment,
@@ -6,8 +15,9 @@ import {
   incrementAsync,
   incrementIfOdd,
 } from './counterSlice';
+
+// styles
 import styles from './Counter.module.css';
-import { useCounterData } from './hooks/useCounterData';
 
 export const Counter = () => {
   const { count, dispatch, incrementAmount, incrementValue, setIncrementAmount } = useCounterData();
@@ -75,6 +85,7 @@ export const Counter = () => {
           Add If Odd
         </button>
       </div>
+      <Footer />
     </div>
   );
 };

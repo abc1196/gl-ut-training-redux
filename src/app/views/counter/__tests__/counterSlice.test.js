@@ -1,3 +1,4 @@
+// slice
 import { increment, decrement, incrementByAmount, reducer } from '../counterSlice';
 
 describe('Counter Reducer', () => {

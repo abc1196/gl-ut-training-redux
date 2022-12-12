@@ -1,8 +1,13 @@
+// vendors
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { store } from '../store';
+
+// components
 import { App } from '../App';
+
+// redux
+import { store } from '../store';
 
 describe('App', () => {
   it('renders learn react link', () => {

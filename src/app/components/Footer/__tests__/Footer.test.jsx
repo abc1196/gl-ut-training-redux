@@ -1,4 +1,7 @@
+// vendors
 import { render, screen } from '@testing-library/react';
+
+// components
 import { Footer } from '../Footer';
 
 describe('Footer', () => {

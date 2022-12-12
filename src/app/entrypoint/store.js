@@ -1,5 +1,8 @@
+// vendors
 import { configureStore } from '@reduxjs/toolkit';
-import { reducer as counterReducer } from '../features/Counter/counterSlice';
+
+// reducers
+import { reducer as counterReducer } from '../views/counter/counterSlice';
 
 export const store = configureStore({
   reducer: {

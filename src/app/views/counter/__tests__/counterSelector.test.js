@@ -1,3 +1,4 @@
+// selectors
 import { selectCount } from '../counterSelectors';
 
 describe('Counter Selectors', () => {

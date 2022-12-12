@@ -1,7 +1,12 @@
+// vendors
 import { act, renderHook } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { store } from '../../../../entrypoint';
+
+// hooks
 import { useCounterData } from '../useCounterData';
+
+// redux
+import { store } from '../../../../entrypoint';
 
 describe('useCounterData', () => {
   it('should return values', () => {

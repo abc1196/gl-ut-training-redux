@@ -1,5 +1,10 @@
+// vendors
 import { fireEvent, render, screen } from '@testing-library/react';
+
+// views
 import { Counter } from '../Counter';
+
+// hooks
 import * as hook from '../hooks/useCounterData';
 
 describe('Counter', () => {

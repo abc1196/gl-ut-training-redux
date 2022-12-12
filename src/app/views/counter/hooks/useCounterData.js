@@ -1,5 +1,8 @@
+// vendors
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+
+// selectors
 import { selectCount } from '../counterSelectors';
 
 const INITIAL_AMOUNT = 2;

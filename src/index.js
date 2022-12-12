@@ -1,8 +1,13 @@
+// vendors
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
+
+// entrypoint
 import { App, store } from './app/entrypoint';
 import reportWebVitals from './reportWebVitals';
+
+// styles
 import './index.css';
 
 const container = document.getElementById('root');

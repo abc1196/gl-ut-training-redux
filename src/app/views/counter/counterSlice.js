@@ -1,6 +1,11 @@
+// vendors
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { selectCount } from './counterSelectors';
+
+// services
 import { fetchCount } from './services/counterService';
+
+// selectors
+import { selectCount } from './counterSelectors';
 
 const initialState = {
   value: 0,
